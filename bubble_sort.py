@@ -10,4 +10,4 @@ def bubble_sort(list):
     return list
 
 print(bubble_sort([5,6,3,8,7,5,1,2,3]))
-print(bubble_sort([1,2,3,4,5]))
+print(bubble_sort([5,4,3,2,1]))
