@@ -66,7 +66,7 @@ class MinHeap:
     def __bottomDown(self, idx):
         left_child_idx, right_child_idx = self.__children(idx)
         if self.__isLeaf(idx) is False:
-            if right_child_idx > len(self.Heap):
+            if right_child_idx < len(self.Heap):
                 if self.Heap[right_child_idx] < self.Heap[left_child_idx]:
                     if self.Heap[right_child_idx] < self.Heap[idx]:
                         self.__swap(right_child_idx, idx)
